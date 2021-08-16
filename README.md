@@ -1,5 +1,7 @@
 ## 几个python脚本
 
+## win10无法拖拽问题：使用https://github.com/pyinstaller/pyinstaller
+
 ## 说明：
 
 ### copyEachFoldersFirstFile.py
