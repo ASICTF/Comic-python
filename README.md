@@ -5,8 +5,11 @@
 ## 说明：
 
 ### 删除末尾的图片
+
 Write-Host 仅显示文件名
+
 Remove-Item 直接删除
+
 Remove-Item -Verbose 删除并显示
 
 ### copyEachFoldersFirstFile.py
