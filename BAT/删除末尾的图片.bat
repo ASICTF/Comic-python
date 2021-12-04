@@ -6,8 +6,7 @@ title %#% +%$%%$%/%@% %z%
 cd /d "%~dp0"
 powershell -NoProfile -ExecutionPolicy bypass "Invoke-Command -ScriptBlock ([ScriptBlock]::Create([IO.File]::ReadAllText('%~f0',[Text.Encoding]::Default))) -Args '%~dp0'"
 echo;%#% +%$%%$%/%@% %z%
-pause
-exit
+goto :end
 #>
 $path=$args[0].trimend('\');
 $codes=@'
@@ -36,3 +35,4 @@ $f=$folders[$i].Name+'\'+$list[-1];
 Remove-Item -Verbose $f;
 };
 };
+:end
